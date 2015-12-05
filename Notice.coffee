@@ -10,7 +10,7 @@ this.Notice = (context, options)->
 	options = options || {}
 	this.display_policy = options.display_policy || 'header'
 	this.special_field_handlers = options.special_field_handlers
-	this.default_type = 'error'
+	this.default_type = options.default_type || 'danger'
 
 	this.find_notice_header = (context)=>
 		this.context = context || this.context
